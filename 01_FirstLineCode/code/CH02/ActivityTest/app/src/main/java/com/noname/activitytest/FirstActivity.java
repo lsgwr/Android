@@ -3,6 +3,7 @@ package com.noname.activitytest;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -47,5 +48,10 @@ public class FirstActivity extends AppCompatActivity {
 
     public void finishActivity(View view) {
         finish();
+    }
+
+    public void switchActivity(View view) {
+        Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+        startActivity(intent);
     }
 }
