@@ -24,7 +24,18 @@
         android:text="点击链接Wifi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="300dp"
+        android:onClick="finishActivity"
+        android:text="结束当前活动"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="554dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
