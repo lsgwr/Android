@@ -51,7 +51,7 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     public void switchActivity(View view) {
-        Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-        startActivity(intent);
+        Intent intent = new Intent("com.noname.activitytest.ACTION_START");
+        startActivity(intent); // DEFAULT是一种会默认传入的category
     }
 }

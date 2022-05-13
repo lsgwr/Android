@@ -11,7 +11,12 @@
         android:theme="@style/Theme.ActivityTest">
         <activity
             android:name=".SecondActivity"
-            android:exported="false" />
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.noname.activitytest.ACTION_START" /> <!-- 指定当前活动可以响应的Action -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".FirstActivity"
             android:exported="true">
