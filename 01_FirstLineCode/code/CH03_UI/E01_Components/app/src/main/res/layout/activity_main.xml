@@ -15,6 +15,12 @@
         android:text="This is TextView"
         android:textColor="#00ff00"
         android:textSize="24sp" />
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type something here"
+        android:maxLines="2"/>
 
     <Button
         android:id="@+id/button"
@@ -22,5 +28,6 @@
         android:layout_height="wrap_content"
         android:text="Button"
         android:textAllCaps="false" />
+
 
 </LinearLayout>
