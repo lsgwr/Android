@@ -9,9 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ActivityTest">
+        <activity android:name=".ThirdActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" /> <!-- 和SecondActivity都会被响应 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SecondActivity"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <!-- 只能指定一个action -->
                 <action android:name="com.noname.activitytest.ACTION_START" /> <!-- 指定当前活动可以响应的Action -->
@@ -30,9 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -54,5 +55,11 @@ public class FirstActivity extends AppCompatActivity {
         Intent intent = new Intent("com.noname.activitytest.ACTION_START");
         intent.addCategory("com.noname.activitytest.MY_CATEGORY");
         startActivity(intent); // DEFAULT是一种会默认传入的category
+    }
+
+    public void callSystemBrowser(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://www.baidu.com"));
+        startActivity(intent);
     }
 }
