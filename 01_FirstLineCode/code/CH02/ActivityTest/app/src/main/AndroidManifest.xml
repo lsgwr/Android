@@ -13,8 +13,10 @@
             android:name=".SecondActivity"
             android:exported="false" >
             <intent-filter>
+                <!-- 只能指定一个action -->
                 <action android:name="com.noname.activitytest.ACTION_START" /> <!-- 指定当前活动可以响应的Action -->
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.noname.activitytest.MY_CATEGORY" /> <!-- 可以指定多个category -->
             </intent-filter>
         </activity>
         <activity
