@@ -1,9 +1,11 @@
 package com.noname.e01_components;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
             /* 3.切换图片 */
             ImageView imageView = (ImageView) findViewById(R.id.image_view);
             imageView.setImageResource(R.drawable.img_2);
+
+            /* 4.切换进度条显示状态 */
+            ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+            if (progressBar.getVisibility() == View.GONE) {
+                progressBar.setVisibility(View.VISIBLE);
+            } else {
+                progressBar.setVisibility(View.GONE);
+            }
         });
     }
 }
