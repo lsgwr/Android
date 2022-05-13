@@ -1,5 +1,6 @@
 package com.noname.e01_components;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +43,18 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 progressBar.setVisibility(View.GONE);
             }
+
+            /* 5.弹出警告框，会屏蔽其他所有操作*/
+            AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+            dialog.setTitle("This is Dialog").setMessage("Something important.").setCancelable(false)
+                    .setPositiveButton("OK", (dialog1, which) -> {
+                        // 确认按钮
+                    })
+                    .setNegativeButton("Cancel", (dialog12, which) -> {
+                        // 取消按钮
+                    })
+                    .show(); // 显示这个警告框
+            ;
         });
     }
 }
