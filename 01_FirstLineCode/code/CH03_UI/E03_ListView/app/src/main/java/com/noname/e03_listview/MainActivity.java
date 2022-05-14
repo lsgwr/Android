@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initFruits();
+        initFruits();
         FruitAdapter adapter = new FruitAdapter(MainActivity.this,
                 R.layout.fruit_item, fruitList); // 自定义样式文件和数据
         ListView listView = (ListView) findViewById(R.id.list_view);
