@@ -1,8 +1,11 @@
 package com.noname.e03_listview;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,11 +33,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /* 1.给ListView填充数据(用自定义的样式) */
         initFruits();
         initFruits();
         FruitAdapter adapter = new FruitAdapter(MainActivity.this,
                 R.layout.fruit_item, fruitList); // 自定义样式文件和数据
         ListView listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
+        /* 2.设置每个ListView项的单击事件 */
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            Fruit fruit = fruitList.get(position);
+            Toast.makeText(MainActivity.this, fruit.getName(), Toast.LENGTH_SHORT).show();
+        });
     }
 }
