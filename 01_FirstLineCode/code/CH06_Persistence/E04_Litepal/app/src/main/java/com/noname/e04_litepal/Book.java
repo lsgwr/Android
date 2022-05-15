@@ -1,16 +1,19 @@
 package com.noname.e04_litepal;
 
-public class Book {
+import org.litepal.crud.LitePalSupport;
+
+public class Book extends LitePalSupport{
     private int id;
     private String author;
     private String name;
+    private String press;
     private double price;
     private int pages;
 
-    public Book(int id, String author, String name, double price, int pages) {
-        this.id = id;
+    public Book(String name,String author, String press, double price, int pages) {
         this.author = author;
         this.name = name;
+        this.press = press;
         this.price = price;
         this.pages = pages;
     }
@@ -53,5 +56,13 @@ public class Book {
 
     public void setPages(int pages) {
         this.pages = pages;
+    }
+
+    public String getPress() {
+        return press;
+    }
+
+    public void setPress(String press) {
+        this.press = press;
     }
 }

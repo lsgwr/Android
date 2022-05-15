@@ -20,9 +20,11 @@ public class MainActivity extends AppCompatActivity {
             Connector.getDatabase();  // 自动创建数据库
         });
 
+        /* 2.添加数据 */
         Button btnAddData = findViewById(R.id.add_data);
         btnAddData.setOnClickListener(v -> {
-
+            Book book = new Book("红高粱", "莫言", "清华出版社", 16.96, 454);
+            book.save();
         });
 
         Button btnUpdateData = findViewById(R.id.update_data);

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <litepal>
     <dbname value="BookStore"></dbname>
-    <version value="1"></version>
+    <version value="2"></version> <!-- 数据库结构有修改只需要把该版本号+1即可 -->
     <list>
         <mapping class="com.noname.e04_litepal.Book"></mapping>
+        <mapping class="com.noname.e04_litepal.Category"></mapping>
     </list>
 </litepal>
