@@ -3,11 +3,13 @@ package com.noname.e04_litepal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 import org.litepal.LitePal;
-import org.litepal.crud.LitePalSupport;
 import org.litepal.tablemanager.Connector;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,9 +48,17 @@ public class MainActivity extends AppCompatActivity {
             LitePal.deleteAll(Book.class, "price < ?", "15");
         });
 
+        /* 5.查询数据 */
         Button btnQueryData = findViewById(R.id.query_data);
         btnQueryData.setOnClickListener(v -> {
-
+            List<Book> books = LitePal.findAll(Book.class);
+            for (Book book : books) {
+                Log.d("Main Activity", "onCreate: book name is " + book.getName());
+                Log.d("Main Activity", "onCreate: book author is " + book.getAuthor());
+                Log.d("Main Activity", "onCreate: book pages is " + book.getPages());
+                Log.d("Main Activity", "onCreate: book price is " + book.getPrice());
+                Log.d("Main Activity", "onCreate: book press is " + book.getPress());
+            }
         });
     }
 }
