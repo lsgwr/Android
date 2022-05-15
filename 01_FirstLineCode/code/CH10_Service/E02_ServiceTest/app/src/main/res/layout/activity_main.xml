@@ -22,7 +22,7 @@
         android:text="停止服务"/>
 
     <Button
-        android:id="@+id/bing_service"
+        android:id="@+id/bind_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
