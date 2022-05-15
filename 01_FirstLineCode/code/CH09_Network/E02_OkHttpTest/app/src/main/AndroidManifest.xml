@@ -23,5 +23,6 @@
             </intent-filter>
         </activity>
     </application>
-
+    <!-- 必须联网才能使用HTTP -->
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
