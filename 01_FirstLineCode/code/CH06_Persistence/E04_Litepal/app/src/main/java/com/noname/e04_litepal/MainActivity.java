@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
+import org.litepal.LitePal;
+import org.litepal.crud.LitePalSupport;
 import org.litepal.tablemanager.Connector;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
             book.updateAll("name = ? and author = ?", "The Lost Symbol", "Dan Brown");
         });
 
+        /* 4.删除数据 */
         Button btnDeleteData = findViewById(R.id.delete_data); // 删除数据
-        btnDeleteData.setOnClickListener(v -> {
-
+        btnDeleteData.setOnClickListener(v -> { // 删除价格小于15的书籍
+            LitePal.deleteAll(Book.class, "price < ?", "15");
         });
 
         Button btnQueryData = findViewById(R.id.query_data);
