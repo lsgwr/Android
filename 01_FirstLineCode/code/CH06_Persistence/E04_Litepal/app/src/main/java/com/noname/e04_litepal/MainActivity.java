@@ -23,13 +23,19 @@ public class MainActivity extends AppCompatActivity {
         /* 2.添加数据 */
         Button btnAddData = findViewById(R.id.add_data);
         btnAddData.setOnClickListener(v -> {
-            Book book = new Book("红高粱", "莫言", "清华出版社", 16.96, 454);
-            book.save();
+            Book book1 = new Book("红高粱", "莫言", "清华出版社", 16.96, 454);
+            book1.save();
+            Book book2 = new Book("The Lost Symbol", "Dan Brown", "Unknown", 19.95, 510);
+            book2.save();
         });
 
+        /* 3.更新数据 */
         Button btnUpdateData = findViewById(R.id.update_data);
         btnUpdateData.setOnClickListener(v -> {
-
+            Book book = new Book();
+            book.setPrice(14.95);
+            book.setPress("Anchor");
+            book.updateAll("name = ? and author = ?", "The Lost Symbol", "Dan Brown");
         });
 
         Button btnDeleteData = findViewById(R.id.delete_data); // 删除数据

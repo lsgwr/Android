@@ -18,6 +18,9 @@ public class Book extends LitePalSupport{
         this.pages = pages;
     }
 
+    public Book() {
+    }
+
     public int getId() {
         return id;
     }
