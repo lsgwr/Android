@@ -1,5 +1,9 @@
 # 《疯狂Android讲义(第4版)》李刚(著)
 
+## 电子书存放的位置
+
+![电子书存放的位置](images/电子书存放的位置.png)
+
 ## 书籍介绍
 
 ![疯狂Android讲义（第4版）](images/android4_cover.png)
