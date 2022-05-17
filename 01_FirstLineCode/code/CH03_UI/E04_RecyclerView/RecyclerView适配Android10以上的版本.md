@@ -1,5 +1,7 @@
 # 基于sdk28使用Android Studio创建RecyclerView实例，使用androidx导入recyclerView
 
+> 参考博客：https://blog.csdn.net/qq_43319080/article/details/100854669
+
 ## AndroidX以上版本需要迁移RecyclerView的原因
 
 RecylerView能够实现ListView的所有功能，并且具备许多ListView不具备的特性，如水平滚动等，并且我们编写RecylerView时不需要花费大量时间进行算法结构等优化
