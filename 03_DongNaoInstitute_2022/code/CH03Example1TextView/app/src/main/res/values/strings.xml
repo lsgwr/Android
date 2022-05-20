@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CH03Example1TextView</string>
+    <string name="hello_content">你好，世界 from XML</string>
+    <string name="hello_content2">你好，世界 from XML2</string>
 </resources>
