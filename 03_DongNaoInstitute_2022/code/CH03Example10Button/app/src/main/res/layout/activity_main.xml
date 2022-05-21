@@ -7,11 +7,43 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btnClickTest5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="176dp"
+        android:text="Button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClickTest2" />
+
+    <Button
+        android:id="@+id/btnClickTest4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="104dp"
+        android:text="Button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClickTest2" />
+
+    <Button
+        android:id="@+id/btnClickTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="36dp"
+        android:onClick="doClick"
+        android:text="按钮1-属性绑定click方法"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
+    <Button
         android:id="@+id/btnClickTest2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="116dp"
         android:text="按钮2-监听器注册click方法"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,22 +53,50 @@
         android:id="@+id/tvHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="356dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
         android:text="这里查看按钮的点击结果"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnClickTest1"
+        android:id="@+id/btnClickTest3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="32dp"
-        android:onClick="doClick"
-        android:text="按钮1-属性绑定click方法"
-        android:textAllCaps="false"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="36dp"
+        android:text="Button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+        app:layout_constraintTop_toBottomOf="@+id/btnClickTest2" />
+
+    <Button
+        android:id="@+id/btnEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="37dp"
+        android:text="启用测试按钮"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClickTest5" />
+
+    <Button
+        android:id="@+id/btnDisable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="37dp"
+        android:text="禁用测试按钮"
+        app:layout_constraintStart_toEndOf="@+id/btnEnable"
+        app:layout_constraintTop_toBottomOf="@+id/btnClickTest5" />
+
+    <Button
+        android:id="@+id/btnClickTest6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:text="测试按钮"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
