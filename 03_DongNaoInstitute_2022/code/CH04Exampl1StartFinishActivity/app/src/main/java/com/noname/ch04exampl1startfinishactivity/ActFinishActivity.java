@@ -1,10 +1,9 @@
 package com.noname.ch04exampl1startfinishactivity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ActFinishActivity extends AppCompatActivity implements View.OnClickListener {
 
