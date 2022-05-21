@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- 内容宽度自适应 -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="5dp"
+        android:background="#00ffff"
+        android:text="视图宽度采用wrap_content定义"
+        android:textColor="#000000"
+        android:textSize="17sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- 内容宽度自适应 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#00ffff"
+        android:text="视图宽度采用match_parent定义"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <!-- 内容宽度写死为300dp -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#00ffff"
+        android:text="视图宽度采用固定大小"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <!-- 内容宽度由代码指定为300dp -->
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#00ffff"
+        android:text="视图宽度由代码来指定"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+</LinearLayout>
