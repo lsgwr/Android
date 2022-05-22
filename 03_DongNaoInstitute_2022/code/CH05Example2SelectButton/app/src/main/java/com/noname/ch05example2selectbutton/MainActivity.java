@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // startActivity(new Intent(this, CheckboxActivity.class)); // 复选框
-        startActivity(new Intent(this, SwitchActivity.class)); // 开关
+        // startActivity(new Intent(this, SwitchActivity.class)); // 开关
+        startActivity(new Intent(this, RadioButtonActivity.class)); // 选项按钮组
     }
 }
