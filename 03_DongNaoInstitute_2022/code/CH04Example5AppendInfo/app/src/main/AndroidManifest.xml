@@ -14,6 +14,16 @@
         android:theme="@style/Theme.CH04Example5AppendInfo"
         tools:targetApi="31">
         <activity
+            android:name=".MetaDataActivity"
+            android:exported="false">
+            <meta-data
+                android:name="weather"
+                android:value="@string/weather_str" />
+        </activity>
+        <activity
+            android:name=".ReadStringActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
