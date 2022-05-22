@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".JumpSecondActivity">
 
     <TextView
-        android:id="@+id/tvMain"
+        android:id="@+id/tvSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="356dp"
-        android:text="当前活动：Main"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="132dp"
+        android:text="当前活动：Second"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnMain"
+        android:id="@+id/btnSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         android:text="跳转到活动First"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
-
+        app:layout_constraintTop_toBottomOf="@+id/tvSecond" />
 </androidx.constraintlayout.widget.ConstraintLayout>
