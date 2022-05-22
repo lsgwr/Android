@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startActivity(new Intent(this, CheckboxActivity.class));
+        // startActivity(new Intent(this, CheckboxActivity.class)); // 复选框
+        startActivity(new Intent(this, SwitchActivity.class)); // 开关
     }
 }
