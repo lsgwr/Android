@@ -14,6 +14,15 @@
         android:theme="@style/Theme.CH04Example6Shortcut"
         tools:targetApi="31">
         <activity
+            android:name=".ThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,6 +30,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
     </application>
 

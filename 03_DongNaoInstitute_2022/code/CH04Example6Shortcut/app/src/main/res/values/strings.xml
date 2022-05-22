@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CH04Example6Shortcut</string>
+    <string name="main_short">main</string>
+    <string name="main_long">主界面</string>
+    <string name="first_short">first</string>
+    <string name="first_long">启停活动</string>
+    <string name="second_short">second</string>
+    <string name="second_long">来回跳转</string>
+    <string name="third_short">third</string>
+    <string name="third_long">登录返回</string>
 </resources>
